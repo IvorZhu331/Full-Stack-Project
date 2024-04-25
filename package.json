@@ -1,21 +1,16 @@
 {
   "name": "full-stack-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "A full-stack application with separate front-end and back-end directories.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
-    "start-server": "node app.js",
-    "start-react": "cd create-react-app && npm start"
+    "start-server": "cd back-end && npm start",
+    "start-react": "cd front-end && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivor Zhu",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "googleapis": "^134.0.0"
-  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   }

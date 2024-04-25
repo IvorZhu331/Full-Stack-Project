@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ChartComponent from './ChartComponent';
+import DataTable from './DataTable';
 
 function App() {
     const [data, setData] = useState([]);
@@ -19,12 +21,13 @@ function App() {
 
     return (
         <div>
-            <h1>Data from Google Sheets</h1>
-            <ul>
-                {data.map((item, index) => (
-                    <li key={index}>{JSON.stringify(item)}</li>
-                ))}
-            </ul>
+            <h1>Factory Environmental Test Data</h1>
+            {data.length > 0 ? (
+                <>
+                    <DataTable data={data} /> 
+                    <ChartComponent data={data} />
+                </>
+            ) : <p>Loading data...</p>}
         </div>
     );
 }

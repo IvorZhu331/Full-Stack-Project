@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ChartComponent from './ChartComponent';
 import DataTable from './DataTable';
-
+import './App.css';
 function App() {
     const [data, setData] = useState([]);
 
@@ -20,12 +20,16 @@ function App() {
     }, []);
 
     return (
-        <div>
-            <h1>Factory Environmental Test Data</h1>
+        <div className="container">
+            <a href="https://docs.google.com/spreadsheets/d/1xYOZhz_9S4zOTaV-hFIN1Q0tUMxep-p75T95tvElFmM/edit?usp=sharing" target="_blank"><h1>Factory Environmental Test Data</h1></a>
             {data.length > 0 ? (
                 <>
-                    <DataTable data={data} /> 
-                    <ChartComponent data={data} />
+                    <div className="data-table-container">
+                        <DataTable data={data} />
+                    </div>
+                    <div className="chart-container">
+                        <ChartComponent data={data} />
+                    </div>
                 </>
             ) : <p>Loading data...</p>}
         </div>

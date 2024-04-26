@@ -9,7 +9,7 @@ To get started with this project, clone the repository and install dependencies 
 ### Cloning the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/IvorZhu331/Full-Stack-Project.git
 cd full-stack-project
 ```
 

@@ -62,6 +62,7 @@ cd full-stack-project
 ```bash
 cd front-end
 npm install
+cd ..
 ```
 
 ### Installing Back-End Dependencies
@@ -69,6 +70,7 @@ npm install
 ```bash
 cd back-end
 npm install
+cd ..
 ```
 
 ## Usage

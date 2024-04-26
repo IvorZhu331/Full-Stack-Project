@@ -65,12 +65,18 @@ npm install
 cd ..
 ```
 
-### Installing Back-End Dependencies
+### Install Back-End Dependencies
 
 ```bash
 cd back-end
 npm install
 cd ..
+```
+
+### Install Concurrently
+
+```bash
+npm install
 ```
 
 ## Usage
